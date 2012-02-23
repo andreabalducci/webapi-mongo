@@ -16,6 +16,7 @@ namespace webapi_mongo.Controllers
         
         // GET /api/workshop
         // GET /api/workshop/?$top=1 (odata)
+        // !!!!! please read http://www.mongodb.org/display/DOCS/How+to+do+Snapshotted+Queries+in+the+Mongo+Database !!!!
         public IQueryable<Workshop> Get()
         {
             CheckSampleData();
